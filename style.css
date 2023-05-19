@@ -1,0 +1,78 @@
+:root{
+    --left: #a52020;
+    --right: #a52020;
+    --leftHover: #801919;
+    --system: #000000;
+    --systemHover: #ffffff;
+}
+:root{
+    --borderButton: 50px;
+    --borderWindows: 10px;
+    --borderChatButton: 50px;
+}
+
+.auth{
+    border-radius: var(--borderWindows);
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    height: 25rem;
+    width: 20rem;
+    padding-top: 5rem;
+    vertical-align:middle;
+}
+    .auth h1{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    .auth form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .auth form input{
+        background-color: rgb(238, 238, 238);
+        border: groove;
+        border-color: var(--system);
+        margin: auto;
+        width: 300px;
+        height: 50px;
+        border-radius: var(--borderButton);
+        font-weight: bold;
+        font-size: 20px
+    }
+    .auth form button, button::placeholder{
+        border-radius: var(--borderButton);
+        width: 300px;
+        height: 50px;
+        margin: auto;
+        font-weight: bold;
+        font-size: 20px
+    }
+    .auth form input:hover{
+        background-color: #ffffff;
+    }
+    .auth form input:active, .auth form input:focus{
+        outline: none;
+        background-color: #ffffff;
+    }
+    .auth form button{
+        cursor: pointer;
+        color: #ffffff;
+        background-color: var(--system);
+    }
+    .auth form button:hover{
+        background-color: var(--systemHover);
+        color: #a52020;
+    }
+    .auth form button:focus{
+        outline: none;
+        background-color: var(--systemHover);
+        color: #a52020
+    }
+    .auth a{
+        text-align: center;
+        font-size: 30px;
+    }
