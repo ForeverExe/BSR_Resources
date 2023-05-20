@@ -1,0 +1,17 @@
+<div class="container col-3 auth">
+    <h1 class="text-center" style="color: white">Registrazione</h1>
+    <form action="access.php" method="post">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="registerUser" name="registerUser" placeholder="Nome Utente">
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" id="registerPassw" name="registerPassw" placeholder="Inserisci la Password">
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" id="confirmPassw" name="confirmPassw" placeholder="Conferma Password">
+        </div>
+        <input type="hidden" name="scelta" value="register">
+        <button type="submit" class="btn btn-primary">Registra</button>
+    </form>
+    <a href="index.php">Effettua il login!</a>
+</div>

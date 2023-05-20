@@ -13,14 +13,16 @@
 
 .auth{
     border-radius: var(--borderWindows);
+    background-color: var(--authBg);
+    width: rem;
     display: flex;
     flex-direction: column;
 
-    position: relative;
-    height: 25rem;
-    width: 20rem;
-    padding-top: 5rem;
-    vertical-align:middle;
+    /* PER CENTRARE */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
 }
     .auth h1{
         text-align: center;
@@ -75,4 +77,30 @@
     .auth a{
         text-align: center;
         font-size: 30px;
+        color: white;
+        text-decoration: none;
+        padding-top: 20px;
     }
+    .auth a:hover{
+        color: black;
+    }
+
+.footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: #a52920;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #a52020;
+    text-decoration: none;
+}
+
+.footer a:active {
+    color: white;
+    text-decoration: none;
+}
