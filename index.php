@@ -11,10 +11,10 @@
                 require_once("client/login.html");
             break;
         }
-        case "register":{
-            require_once("client/register.html");
-            break;
-        }
+        // case "register":{
+        //     require_once("client/register.html");
+        //     break;
+        // }
     }
     
     require_once("client/foot.html");
