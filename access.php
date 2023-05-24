@@ -1,12 +1,13 @@
 <?php
-    define("MYSQL_USER", "root");
-    define("MYSQL_PASSWORD", "");
-    define("MYSQL_DB", "beseriousresources");
+    define("MYSQL_USER", "Manager");
+    define("MYSQL_PASSWORD", "BeSeriousManager20xx");
+    define("MYSQL_DB", "bsr_resources");
     define("MYSQL_HOST", "localhost");
     session_start();
 
     // switch($_POST['scelta']){
     //     case "login":{
+            //controllare perche' all'accesso non esegue e non manda alla pagina, magari cambiare direttamente il metodo
             if(isset($_POST['nome']) && isset($_POST['password'])){
                 $password = hash("sha256", $_POST['password'], false);
                 $db = new mysqli(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB);
@@ -18,6 +19,7 @@
                     if ($db->query($sql)) {
                         setcookie("user", $record['username'], time() + 86400, "/");
                         setcookie("userID", $record['UserId'], time() + 86400, "/");
+                        setcookie("name", $record['nome'], time()+86400, "/");
                         header("Location: http://localhost/BSR_Resources/index.php");
                     }else
                         echo("errore in sql");
